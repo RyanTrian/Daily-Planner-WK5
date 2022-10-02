@@ -1,11 +1,16 @@
-
+function getLocalStorage(key) {
+  let value = localStorage.getItem(key);
+  if (value) {
+      $(`#text${key}`).text(value);
+  }
+}
 // When the DOM is fully loaded, run this function
 $(function() {
     $('#currentDay').text(moment().format("dddd, MMMM Do"));
     for (let i = 9; i < 18; i++) {
         let row = $(`<section class='row' id='row${i}' data-time=${i}></section>`);
 
-        let timeblock = $('<div class="col-sm-2" id="time-block"><p class="hour">' +renderTimeBlock(i) + '</p>');
+        let timeblock = $('<div class="col-sm-2" id="timeBlock"><p class="hour time-block">' +renderTimeBlock(i) + '</p>');
 
         let isTask = $(`<div class="col-sm-8 past"><textarea id=text${i} class="description" placeholder="Add your event here..."></textarea>`);
 
@@ -16,6 +21,8 @@ $(function() {
         row.append(saveBtn);
 
         $('.container').append(row);
+
+        getLocalStorage(i);
     }
     // render the time + am or pm on the left side to indicate time block
     function renderTimeBlock(hour) {
@@ -39,5 +46,11 @@ $(function() {
     setInterval(function () {
       whatColor();
     }, 1000);
-    
+
+    let saveBtn = $(".saveBtn");
+    saveBtn.on("click", function () {
+    let eventId = $(this).attr("id");
+    let eventText = $(this).parent().siblings().children(".description").val();
+    localStorage.setItem(eventId, eventText);
+    });
 });

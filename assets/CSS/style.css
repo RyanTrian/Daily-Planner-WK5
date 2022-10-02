@@ -32,8 +32,8 @@ i {
 }
 
 .time-block {
+  padding-top: 25%;
   text-align: center;
-  border-radius: 15px;
 }
 
 .row {
@@ -47,7 +47,7 @@ i {
   color: #000000;
   border-top: 1px dashed #000000;
 }
-#time-block {
+#timeBlock {
   padding-right: 0;
 }
 #save-div {
