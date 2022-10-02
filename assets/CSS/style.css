@@ -11,6 +11,8 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 i {
@@ -45,6 +47,12 @@ i {
   color: #000000;
   border-top: 1px dashed #000000;
 }
+#time-block {
+  padding-right: 0;
+}
+#save-div {
+  padding-left: 0;
+}
 /* color indication */
 .past {
   background-color: #d3d3d3;
@@ -72,6 +80,6 @@ i {
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 30px;
   transition: all 0.3s ease-in-out;
 }
