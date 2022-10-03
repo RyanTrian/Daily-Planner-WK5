@@ -1,3 +1,5 @@
+// Check if there any value store in storage for each time block
+// If true, render it inside the corresponding textarea
 function getLocalStorage(key) {
   let value = localStorage.getItem(key);
   if (value) {
@@ -45,17 +47,18 @@ $(function() {
         }
     }
     
+    // Checking the hour every second, if the hour change, update the colors
     setInterval(function () {
       whatColor();
     }, 1000);
-
+    // Save Button
     let saveBtn = $(".save");
     saveBtn.on("click", function () {
     let eventId = $(this).attr("id");
     let eventText = $(this).parent().siblings().children(".description").val();
     localStorage.setItem(eventId, eventText);
     });
-
+    // Erase Button
     let deleteBtn = $(".delete");
     deleteBtn.on("click", function() {
         let eventId = $(this).attr("id");
