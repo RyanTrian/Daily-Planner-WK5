@@ -22,3 +22,4 @@ Grey time-block means past, red is current, and green is upcoming.
 * JQuery, Bootstrap, and Moment Js were intimidating at first. After this project, I believe I have got the basics down and will be confident to try them out again in future project.
 * Also got to practice writing If else statement using (?) operator.
 * Tinkering with arrow function, but ended up not implement it in this project.
+* Use prepend, setTimeout, .remove() to give a message that the events have been saved.

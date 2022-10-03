@@ -57,6 +57,11 @@ $(function() {
     let eventId = $(this).attr("id");
     let eventText = $(this).parent().siblings().children(".description").val();
     localStorage.setItem(eventId, eventText);
+    // save to local message
+    $('.container').prepend('<p class="message">Events have been save to local ✔</p>')
+    setTimeout(function() {
+        $('.message').remove();
+    }, 3000);
     });
     // Erase Button
     let deleteBtn = $(".delete");

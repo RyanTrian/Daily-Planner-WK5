@@ -95,3 +95,8 @@ border-bottom-right-radius: 15px;
   outline: none;
   border: none;
 }
+
+.message {
+  font-style: italic;
+  text-align: center;
+}
