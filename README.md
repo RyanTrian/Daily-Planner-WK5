@@ -10,7 +10,7 @@ Grey time-block means past, red is current, and green is upcoming.
 
 ## Screenshot 📷
 
-![Work Day Scheduler](https://user-images.githubusercontent.com/82792300/193506533-590407a5-4308-4323-8c17-081b7dd6e058.png)
+![Work Day Planner](https://user-images.githubusercontent.com/82792300/193509562-141dee57-74a8-4a60-b467-bdbd30541fa2.png)
 
 ## Usage
 
