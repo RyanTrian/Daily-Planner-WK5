@@ -89,6 +89,10 @@ border-bottom-right-radius: 15px;
   font-size: 30px;
   transition: all 0.3s ease-in-out;
 }
+.Btn:focus {
+  outline: none;
+  border: none;
+}
 .Btn:active {
   outline: none;
   border: none;
