@@ -62,5 +62,5 @@ $(function() {
         localStorage.removeItem(eventId);
         $(this).parent().siblings().children(".description").val('');
     })
-
+    
 });
