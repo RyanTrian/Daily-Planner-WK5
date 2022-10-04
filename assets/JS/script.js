@@ -14,11 +14,11 @@ $(function() {
     for (let i = 9; i < 18; i++) {
         let row = $(`<section class='row' id='row${i}' data-time=${i}></section>`);
 
-        let timeblock = $('<div class="col-sm-2" id="timeBlock"><p class="hour time-block">' +renderTimeBlock(i) + '</p>');
+        let timeblock = $('<div class="col-2 col-sm-2" id="timeBlock"><p class="hour time-block">' +renderTimeBlock(i) + '</p>');
 
-        let isTask = $(`<div class="col-sm-8 past"><textarea id=text${i} class="description" placeholder="Add your event here..."></textarea>`);
+        let isTask = $(`<div class="col-8 col-sm-8 past"><textarea id=text${i} class="description" placeholder="Add your event here..."></textarea>`);
 
-        let saveBtn = $(`<div class="col-sm-2" id="Btn-div"><button class="Btn save" id=${i}><i class="fas fa-save"></i><button class="Btn delete" id=${i}><i class="fas fa-eraser"></i></button>`);
+        let saveBtn = $(`<div class="col-2 col-sm-2" id="Btn-div"><button class="Btn save" id=${i}><i class="fas fa-save"></i><button class="Btn delete" id=${i}><i class="fas fa-eraser"></i></button>`);
         
         row.append(timeblock);
         row.append(isTask);
